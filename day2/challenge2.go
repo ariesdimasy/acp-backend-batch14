@@ -79,9 +79,19 @@ func FullPrima(num int32) bool {
 	return isFullPrime
 }
 
+/*
+  0 1 2 3 4 5 6
+0 _ _ _ * _ _ _
+1 _ * * * _
+2 * * * * *
+
+
+
+*/
+
 func playWithAsterik(n int) {
 	var row string = ""
-	var lengthRow int = n + (n - 1)
+	var lengthRow int = n + (n - 1) // 4 -> 7 ,
 	var myCeil float64 = float64((lengthRow - 1) / 2)
 	var middle int = int(myCeil)
 
@@ -92,17 +102,18 @@ func playWithAsterik(n int) {
 			if (i == 0) && (j == middle) {
 				row = row + "*"
 			} else if j >= (middle-i) && j <= (middle+i) {
+
 				if middle%2 == 0 {
 					if (i % 2) == 0 {
 						if j%2 == 0 {
 							row = row + "*"
 						} else {
-							row = row + " "
+							row = row + "_"
 						}
 
 					} else {
 						if j%2 == 0 {
-							row = row + " "
+							row = row + "_"
 						} else {
 							row = row + "*"
 						}
@@ -113,7 +124,7 @@ func playWithAsterik(n int) {
 						row = row + "*"
 					} else if i%2 == 0 {
 						if j%2 == 0 {
-							row = row + " "
+							row = row + "_"
 						} else {
 							row = row + "*"
 						}
@@ -121,19 +132,25 @@ func playWithAsterik(n int) {
 						if j%2 == 0 {
 							row = row + "*"
 						} else {
-							row = row + " "
+							row = row + "_"
 						}
 					}
 				}
 
 			} else {
-				row = row + " "
+				row = row + "_"
 			}
 		}
 
 		println(row)
 	}
 }
+
+/*'
+1
+2 4 6
+3
+*/
 
 func cetakTablePerkalian(num int32) {
 
@@ -225,12 +242,13 @@ func main() {
 	// playWithAsterik(6)
 	// playWithAsterik(7)
 
-	//cetakTablePerkalian(9)
+	// cetakTablePerkalian(9)
+	// cetakTablePerkalian(5)
 
-	fmt.Println(ubahHuruf("SEPULSA OKE"))     // COZEVCK YUO
-	fmt.Println(ubahHuruf("ALTERRA ACADEMY")) // KVDOBBK KMKNOWI
-	fmt.Println(ubahHuruf("INDONESIA"))       // SXNYXOCSK
-	fmt.Println(ubahHuruf("GOLANG"))          // QYVKXQ
-	fmt.Println(ubahHuruf("PROGRAMMER"))      // ZBYQBKWWOB
+	// fmt.Println(ubahHuruf("SEPULSA OKE"))     // COZEVCK YUO
+	// fmt.Println(ubahHuruf("ALTERRA ACADEMY")) // KVDOBBK KMKNOWI
+	// fmt.Println(ubahHuruf("INDONESIA"))       // SXNYXOCSK
+	// fmt.Println(ubahHuruf("GOLANG"))          // QYVKXQ
+	// fmt.Println(ubahHuruf("PROGRAMMER"))      // ZBYQBKWWOB
 
 }
