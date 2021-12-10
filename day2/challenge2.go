@@ -170,12 +170,14 @@ func ubahHuruf(sentence string) string {
 
 		if findIndex < 16 {
 			findIndex += 10
-			newSentence += string(alphabet[findIndex])
+
 		} else {
 			//println(string(alphabet[findIndex]), findIndex)
 			findIndex = 9 - (25 - findIndex)
-			newSentence += string(alphabet[findIndex])
+
 		}
+
+		newSentence += string(alphabet[findIndex])
 
 	}
 
