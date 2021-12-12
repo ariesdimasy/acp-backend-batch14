@@ -9,6 +9,8 @@ func main() {
 
 	var colors = []string{"red", "yellow", "blue", "brown"}
 
+	colors = append(colors, "orange")
+
 	var someColors = make([]int, 10)
 	// println(colors, someColors)
 

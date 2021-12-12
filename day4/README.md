@@ -11,6 +11,13 @@ cara membuat array
 var colors = [3]string{"red", "yellow","brown"}
 ```
 
+menambah koleksi array
+
+```go
+var colors = [3]string{"red", "yellow","brown"}
+colors = append("blue")
+```
+
 cara membuat array multi dimensi
 
 ```go
