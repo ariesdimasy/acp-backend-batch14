@@ -95,4 +95,21 @@ func MunculSekali(angka string) []int {
 
 func PairSum(arr []int, target int) []int {
 
+	var result = []int{}
+
+	for i := 0; i < len(arr); i++ {
+		for j := 0; j < len(arr); j++ {
+			if arr[i]+arr[j] == target {
+				result = append(result, i, j)
+				break
+			}
+		}
+
+		if len(result) > 1 {
+			break
+		}
+	}
+
+	return result
+
 }
