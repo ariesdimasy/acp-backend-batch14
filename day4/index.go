@@ -1,24 +1,38 @@
 package main
 
 import (
+	"acp-golang/day4/answer"
 	"fmt"
 )
 
 func main() {
 	fmt.Println("Hello Golang day 4")
 
-	var colors = []string{"red", "yellow", "blue", "brown"}
+	// soal 1
+	// fmt.Println(answer.Compare("AKA", "AKASHI"))     // AKA
+	// fmt.Println(answer.Compare("KANGOORO", "KANG"))  // KANG
+	// fmt.Println(answer.Compare("KI", "KIJANG"))      // KI
+	// fmt.Println(answer.Compare("KUPU-KUPU", "KUPU")) // KUPU
+	// fmt.Println(answer.Compare("ILALANG", "ILA"))    // ILA
 
-	colors = append(colors, "orange")
+	// fmt.Println(answer.Caesar(3, "abc"))             // def
+	// fmt.Println(answer.Caesar(2, "alta"))            // cnvc
+	// fmt.Println(answer.Caesar(10, "alterraacademy")) // kvdobbkkmknowi
+	// fmt.Println(answer.Caesar(1, "abcdefghijklmnopqrstuvwxyz"))
+	// // abcdefghijklmnopqrstuvwxyz
+	// // bcdefghijklmnopqrstuvwxyza
+	// fmt.Println(answer.Caesar(1000, "abcdefghijklmnopqrstuvwxyz"))
 
-	var someColors = make([]int, 10)
-	// println(colors, someColors)
+	// fmt.Println(answer.ArrayUnique([]int{1, 2, 3, 4}, []int{1, 3, 5, 10, 16}))   // [2 4]
+	// fmt.Println(answer.ArrayUnique([]int{10, 20, 30, 40}, []int{5, 10, 15, 59})) // [20 30 40]
+	// fmt.Println(answer.ArrayUnique([]int{1, 3, 7}, []int{1, 3, 5}))              // [7]
+	// fmt.Println(answer.ArrayUnique([]int{3, 8}, []int{2, 8}))                    // [3]
+	// fmt.Println(answer.ArrayUnique([]int{1, 2, 3}, []int{3, 2, 1}))              // []
 
-	fmt.Println(colors, someColors)
+	fmt.Println(answer.FindMaxSumSubArray(3, []int{2, 1, 5, 1, 3, 2})) // 9
+	fmt.Println(answer.FindMaxSumSubArray(2, []int{2, 3, 4, 1, 5}))    // 7
+	fmt.Println(answer.FindMaxSumSubArray(2, []int{2, 1, 4, 1, 1}))    // 5
+	fmt.Println(answer.FindMaxSumSubArray(3, []int{2, 1, 4, 1, 1}))    // 7
+	fmt.Println(answer.FindMaxSumSubArray(4, []int{2, 1, 4, 1, 1}))    // 8
 
-	multi := [][]int{} // ini slice
-	multi = append(multi, []int{1, 2})
-	multi = append(multi, []int{3, 4})
-
-	fmt.Println((multi))
 }

@@ -245,10 +245,10 @@ func main() {
 	// cetakTablePerkalian(9)
 	// cetakTablePerkalian(5)
 
-	// fmt.Println(ubahHuruf("SEPULSA OKE"))     // COZEVCK YUO
-	// fmt.Println(ubahHuruf("ALTERRA ACADEMY")) // KVDOBBK KMKNOWI
-	// fmt.Println(ubahHuruf("INDONESIA"))       // SXNYXOCSK
-	// fmt.Println(ubahHuruf("GOLANG"))          // QYVKXQ
-	// fmt.Println(ubahHuruf("PROGRAMMER"))      // ZBYQBKWWOB
+	fmt.Println(ubahHuruf("SEPULSA OKE"))     // COZEVCK YUO
+	fmt.Println(ubahHuruf("ALTERRA ACADEMY")) // KVDOBBK KMKNOWI
+	fmt.Println(ubahHuruf("INDONESIA"))       // SXNYXOCSK
+	fmt.Println(ubahHuruf("GOLANG"))          // QYVKXQ
+	fmt.Println(ubahHuruf("PROGRAMMER"))      // ZBYQBKWWOB
 
 }
