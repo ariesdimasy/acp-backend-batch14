@@ -90,6 +90,40 @@ func ArrayUnique(arrayA, arrayB []int) []int {
 
 func FindMaxSumSubArray(k int, arr []int) int {
 	// your code here
+	var maxSum int
 
-	return 0
+	for i := 0; i < len(arr)-k; i++ {
+		var temp int
+		for j := i; j < i+k; j++ {
+			temp += arr[j]
+		}
+
+		if temp > maxSum {
+			maxSum = temp
+		}
+	}
+
+	return maxSum
+}
+
+func RemoveDuplicates(array []int) int {
+	// your code here
+	var result = []int{}
+	var temp int = array[0]
+
+	for i := 0; i < len(array); i++ {
+
+		if i == 0 {
+
+			result = append(result, array[i])
+		} else {
+			if temp != array[i] {
+				temp = array[i]
+				result = append(result, array[i])
+			}
+		}
+	}
+
+	//fmt.Println(result)
+	return len(result)
 }

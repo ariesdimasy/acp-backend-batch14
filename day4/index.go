@@ -29,10 +29,16 @@ func main() {
 	// fmt.Println(answer.ArrayUnique([]int{3, 8}, []int{2, 8}))                    // [3]
 	// fmt.Println(answer.ArrayUnique([]int{1, 2, 3}, []int{3, 2, 1}))              // []
 
-	fmt.Println(answer.FindMaxSumSubArray(3, []int{2, 1, 5, 1, 3, 2})) // 9
-	fmt.Println(answer.FindMaxSumSubArray(2, []int{2, 3, 4, 1, 5}))    // 7
-	fmt.Println(answer.FindMaxSumSubArray(2, []int{2, 1, 4, 1, 1}))    // 5
-	fmt.Println(answer.FindMaxSumSubArray(3, []int{2, 1, 4, 1, 1}))    // 7
-	fmt.Println(answer.FindMaxSumSubArray(4, []int{2, 1, 4, 1, 1}))    // 8
+	// fmt.Println(answer.FindMaxSumSubArray(3, []int{2, 1, 5, 1, 3, 2})) // 9
+	// fmt.Println(answer.FindMaxSumSubArray(2, []int{2, 3, 4, 1, 5}))    // 7
+	// fmt.Println(answer.FindMaxSumSubArray(2, []int{2, 1, 4, 1, 1}))    // 5
+	// fmt.Println(answer.FindMaxSumSubArray(3, []int{2, 1, 4, 1, 1}))    // 7
+	// fmt.Println(answer.FindMaxSumSubArray(4, []int{2, 1, 4, 1, 1}))    // 8
+
+	fmt.Println(answer.RemoveDuplicates([]int{2, 3, 3, 3, 6, 9, 9})) // 4
+	fmt.Println(answer.RemoveDuplicates([]int{2, 3, 4, 5, 6, 9, 9})) // 6
+	fmt.Println(answer.RemoveDuplicates([]int{2, 2, 2, 11}))         // 2
+	fmt.Println(answer.RemoveDuplicates([]int{2, 2, 2, 11}))         // 2
+	fmt.Println(answer.RemoveDuplicates([]int{1, 2, 3, 11, 11}))     // 4
 
 }
