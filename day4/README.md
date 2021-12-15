@@ -1,29 +1,55 @@
-# Day4
+# Day 4
 
-## Array , Slice, and Map
+## Day 4 - Function , String, anonymous function
 
-cara membuat array
+function adalah sekumpulan code block yang dapat di pakai kembali
+
+contoh function :
+
+1. function without return
 
 ```go
+// function without return
+func add ( a int, b int) {
+    fmt.Println(a + b)
+}
 
-// array yang sudah di tentukan jumlah dan isi nya
-
-var colors = [3]string{"red", "yellow","brown"}
 ```
 
-menambah koleksi array
+2. function with return
 
 ```go
-var colors = [3]string{"red", "yellow","brown"}
-colors = append("blue")
+// function with return
+func add ( a int, b int) int {
+    return a + b
+}
+
 ```
 
-cara membuat array multi dimensi
+3. function with multi return
 
 ```go
-multi := [][]int{} // ini slice
-multi = append(multi, []int{1, 2})
-multi = append(multi, []int{3, 4})
+// function with return
+func add (a int, b int) (int ,bool)  {
+    hasil  = a + b
+    return  hasil , true
+}
 
-// [[1 2] [3 4]]
+```
+
+4. function with multi return again
+
+```go
+// function with return
+func add ( a int, b int) (hasil int ,bool)  {
+    return a + b, true
+}
+
+```
+
+5. anonymous function
+
+```go
+
+
 ```
